@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "若使用本仓库代码，请引用对应论文或本仓库。"
+title: "fractional-transport"
+abstract: "分数阶反常运移模型的快速正演与统计反演"
+version: 0.1.0
+date-released: 2026-11-10
+authors:
+  - family-names: "＿＿＿＿＿＿"
+    given-names: "＿＿"
+    affiliation: "河海大学 数学学院"

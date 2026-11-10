@@ -1,0 +1,30 @@
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# ---- 笔记本 ----
+.ipynb_checkpoints/
+
+# ---- 数据（原始数据不进库：体积大、可能涉版权）----
+data/raw/*
+!data/raw/.gitkeep
+
+# ---- 生成物 ----
+docs/figures/*.png
+docs/figures/*.pdf
+!docs/figures/.gitkeep
+
+# ---- 本地环境与编辑器 ----
+.env
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,26 @@
+# 可辨识性实验配置（W3 周三开始用）
+# 改这里，不要改 run.py
+
+[model]
+alpha_min = 0.3
+alpha_max = 1.0
+alpha_step = 0.05      # 15 个取值
+beta_min = 0.3
+beta_max = 1.0
+beta_step = 0.05       # 15 个取值
+v = 1.0e-3             # 流速 m/s
+d = 1.0e-6             # 弥散系数 m^2/s
+
+[numerics]
+nx = 400
+cfl = 0.4              # 由 cfl 反算 dt
+t_end = 86400.0        # 模拟时长 s
+
+[observation]
+sections = 3           # 观测断面数：1 / 3 / 5
+noise_levels = [0.01, 0.05, 0.10]
+threshold = 0.02       # 相对 L2 距离判据：< 2% 判为不可辨识（写死，不许事后改）
+
+[output]
+fig_dir = "docs/figures"
+seed = 20261110
